@@ -26,6 +26,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 @font-face {
@@ -41,10 +42,11 @@ font & reset css
 @font-face {
   font-family: "Brown-bold";
   src: url("../fonts/Brown-Bold.ttf");
-  /* src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg'); */
+  src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 /* 
 ---------------------------------------------
 reset
