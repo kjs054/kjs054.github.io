@@ -35,7 +35,7 @@ font & reset css
   src: url("../fonts/Gilroy-Bold.eot") format("embedded-opentype"),
     url("../fonts/Gilroy-Bold.woff") format("woff"),
     url("../fonts/Gilroy-Bold.ttf") format("truetype");
-  font-weight: 900;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -163,12 +163,12 @@ hgroup {
 html,
 body {
   font-family: Brown-bold, sans-serif;
-  font-weight: 400;
   position: relative;
   background: linear-gradient(180deg, #ffffff, #f3e6ff);
   font-size: 16px;
   background-size: contain;
   -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -338,7 +338,6 @@ button.main-button:hover {
   margin-top: 0px;
   text-align: center;
   font-size: 42px;
-  font-weight: 700;
   color: #1e1e1e;
   margin-bottom: 25px;
 }
@@ -848,11 +847,11 @@ welcome
 }
 
 h1 {
-  font-style: normal;
   color: #973bf6;
   font-family: Gilroy, sans-serif;
   font-size: calc(2rem + 2.2vw);
   margin-bottom: 30px;
+  font-weight: 900;
 }
 
 h2 {
