@@ -32,9 +32,9 @@ font & reset css
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Bold.ttf");
-  src: url("../fonts/Brown-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Brown-Bold.woff") format("woff"),
-    url("../fonts/Brown-Bold.ttf") format("truetype");
+  src: url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,7 +42,9 @@ font & reset css
 @font-face {
   font-family: "Brown-bold";
   src: url("../fonts/Brown-Bold.ttf");
-  src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  src: url("../fonts/Brown-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Brown-Bold.woff") format("woff"),
+    url("../fonts/Brown-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
