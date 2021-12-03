@@ -27,6 +27,22 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  /* src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown-bold";
+  src: url("../fonts/Brown-Bold.ttf");
+  /* src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg'); */
+  font-weight: normal;
+  font-style: normal;
+}
 /* 
 ---------------------------------------------
 reset
@@ -148,7 +164,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size:contain
+  background-size: contain;
 }
 
 a {
@@ -174,7 +190,7 @@ h3 {
 }
 
 input {
-  background-color: #973BF6;
+  background-color: #973bf6;
   color: #fff;
 }
 
@@ -212,7 +228,8 @@ body {
   .btn-group {
     flex-direction: column;
   }
-  #win .row, #conversation .row {
+  #win .row,
+  #conversation .row {
     flex-direction: column-reverse;
   }
   .mobile-top-fix {
@@ -239,16 +256,15 @@ body {
 .button {
   font-size: 22px;
   border: none;
-    border-radius: 16px;
-    text-align: center;
-    padding: 10px 45px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    
+  border-radius: 16px;
+  text-align: center;
+  padding: 10px 45px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .btn-group {
@@ -257,7 +273,7 @@ body {
 }
 
 a.main-button-slider {
-  background-color: #973BF6;
+  background-color: #973bf6;
   color: #fff;
 }
 
@@ -346,7 +362,6 @@ header
 */
 
 .header-area {
-  
 }
 
 .header-area .main-nav {
@@ -356,7 +371,6 @@ header
 
 .header-area .main-nav .logo {
   line-height: 110px;
-  
 }
 
 .header-area .main-nav .nav {
@@ -403,89 +417,91 @@ header
   width: 100%;
   height: 100%;
   position: absolute;
-  background:url(../images/line.svg) no-repeat center bottom;
+  background: url(../images/line.svg) no-repeat center bottom;
   background-size: contain;
   background-position-y: 357px;
 }
 
-.modal-newsletter {	
-		color: #999;
-		width: 100%;
-		margin: 30px auto;
-		font-size: 15px;
-    top: 48%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%) !important;
-	}
-	.modal-newsletter .modal-content {
-		padding: 40px 50px;
-		border-radius: 10px;		
-		border: none;
-	}
-	.modal-newsletter .modal-header {
-		border-bottom: none;   
-        position: relative;
-		text-align: center;
-		border-radius: 5px 5px 0 0;
-	}
-	.modal-newsletter h4 {
-		color: #000;
-		text-align: center;
-		font-family: 'Lato', sans-serif;
-		font-weight: 900;
-		font-size: 30px;
-		margin: 0 0 25px;		
-		text-transform: uppercase;
-	}
-	.modal-newsletter .close {
-		position: absolute;
-    top: -23px;
-    right: -4px;
-    color: #000000;
-    text-shadow: none;
-    width: 22px;
-    height: 22px;
-    font-size: 40px;
-	}
-	.modal-newsletter .close:focus {
-		outline: none;
-	}
-	.modal-newsletter .icon-box {
-		display: inline-block;
-		z-index: 9;
-		text-align: center;
-		position: relative;
-	}
-	.modal-newsletter .icon-box i {
-		font-size: 110px;
-	}
-	.modal-newsletter .form-control, .modal-newsletter .btn {
-		min-height: 46px;
-		border-radius: 10px; 
-	}
-	.modal-newsletter .form-control {
-		box-shadow: none;
-		border-color: #dbdbdb;
-    margin-bottom: 20px;
-	}
-	.modal-newsletter .form-control:focus {
-		border-color: #973bf6;
-	}
-  
-  .modal-newsletter .button {
-    width: 100%;
-  }
+.modal-newsletter {
+  color: #999;
+  width: 100%;
+  margin: 30px auto;
+  font-size: 15px;
+  top: 48%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%) !important;
+}
+.modal-newsletter .modal-content {
+  padding: 40px 50px;
+  border-radius: 10px;
+  border: none;
+}
+.modal-newsletter .modal-header {
+  border-bottom: none;
+  position: relative;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+.modal-newsletter h4 {
+  color: #000;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+}
+.modal-newsletter .close {
+  position: absolute;
+  top: -23px;
+  right: -4px;
+  color: #000000;
+  text-shadow: none;
+  width: 22px;
+  height: 22px;
+  font-size: 40px;
+}
+.modal-newsletter .close:focus {
+  outline: none;
+}
+.modal-newsletter .icon-box {
+  display: inline-block;
+  z-index: 9;
+  text-align: center;
+  position: relative;
+}
+.modal-newsletter .icon-box i {
+  font-size: 110px;
+}
+.modal-newsletter .form-control,
+.modal-newsletter .btn {
+  min-height: 46px;
+  border-radius: 10px;
+}
+.modal-newsletter .form-control {
+  box-shadow: none;
+  border-color: #dbdbdb;
+  margin-bottom: 20px;
+}
+.modal-newsletter .form-control:focus {
+  border-color: #973bf6;
+}
 
-	.modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
-		background: #39b3af;
-		outline: none;
-	}
-	
-	.hint-text {
-		margin: 100px auto;
-		text-align: center;
-	}
+.modal-newsletter .button {
+  width: 100%;
+}
+
+.modal-newsletter .btn:hover,
+.modal-newsletter .btn:focus {
+  background: #39b3af;
+  outline: none;
+}
+
+.hint-text {
+  margin: 100px auto;
+  text-align: center;
+}
 
 .header-area .main-nav .nav li:hover a {
   color: #fba70b;
@@ -815,11 +831,14 @@ welcome
   height: 100vh;
 }
 
-@media only screen and (min-width : 1200px) {
-    .container { max-width: 1500px; } 
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1500px;
+  }
 }
 
-.left-text, .right-text {
+.left-text,
+.right-text {
   position: relative;
   align-self: center;
 }
@@ -861,7 +880,7 @@ img {
 
 .back-mask {
   width: 123%;
-  background-color: #B472F8;
+  background-color: #b472f8;
   position: absolute;
   height: 67%;
   border-radius: 50%;
@@ -883,7 +902,6 @@ img {
 } */
 
 @media (max-width: 1320px) {
-  
   #lineContainer {
     background-position-y: calc(27vw - 50px);
   }
@@ -907,7 +925,7 @@ img {
   #gameplay {
     height: 754px;
   }
-   #gameplay img {
+  #gameplay img {
     width: 87%;
     max-height: 600px;
     object-fit: cover;
@@ -915,7 +933,6 @@ img {
 }
 
 @media (max-width: 1140px) {
-
   .welcome-area .header-text {
     width: 92%;
     padding-top: 793px;
@@ -946,7 +963,6 @@ img {
 about
 ---------------------------------------------
 */
-
 
 @media (max-width: 992px) {
   .features-item {
@@ -997,7 +1013,7 @@ gameplay
 */
 
 #gameplay {
-  background-color: #B26BFA;
+  background-color: #b26bfa;
 }
 
 #gameplay .game-item {
@@ -1006,7 +1022,8 @@ gameplay
   padding-bottom: 20px;
 }
 
-#gameplay h3, #gameplay p {
+#gameplay h3,
+#gameplay p {
   color: #ffffff;
 }
 
@@ -1389,7 +1406,7 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(145deg, #B26EF8 0%, #8B1DFC 100%);
+  background-image: linear-gradient(145deg, #b26ef8 0%, #8b1dfc 100%);
   left: 0;
   right: 0;
   top: 0;
