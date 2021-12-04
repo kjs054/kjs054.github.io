@@ -270,8 +270,13 @@ body {
   transition: all 0.3s ease 0s;
 }
 
+form {
+  margin-top: 30px;
+}
+
 .btn-group {
   gap: 10px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -332,19 +337,6 @@ button.main-button:hover {
 
 .center-heading {
   margin-bottom: 70px;
-}
-
-.center-heading h2 {
-  margin-top: 0px;
-  text-align: center;
-  font-size: 42px;
-  color: #1e1e1e;
-  margin-bottom: 25px;
-}
-
-.center-heading h2 em {
-  font-style: normal;
-  color: #f4813f;
 }
 
 .center-heading p {
@@ -851,7 +843,8 @@ h1 {
   font-family: Gilroy, sans-serif;
   font-size: calc(2rem + 2.2vw);
   margin-bottom: 30px;
-  font-weight: 900;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -860,7 +853,6 @@ h2 {
   color: #676767;
   line-height: 37px;
   letter-spacing: 0.25px;
-  margin-bottom: 30px;
   position: relative;
 }
 
@@ -926,6 +918,9 @@ img {
     max-height: 600px;
     object-fit: cover;
   }
+  .section {
+    margin-bottom: 85px;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -951,6 +946,13 @@ img {
   .container-fluid .col-md-12 {
     margin-right: 0px;
     padding-right: 0px;
+  }
+  .section {
+    margin-bottom: 20px;
+  }
+
+  h1, p {
+     letter-spacing: 0px;
   }
 }
 
@@ -1021,6 +1023,10 @@ gameplay
 #gameplay h3,
 #gameplay p {
   color: #ffffff;
+}
+
+#gameplay p {
+  padding-top: 10px;
 }
 
 /*
@@ -1140,10 +1146,6 @@ testimonials
   color: #fff;
   font-weight: 200;
   font-size: 13px;
-}
-
-.section {
-  margin-bottom: 85px;
 }
 
 #testimonials .author img {
