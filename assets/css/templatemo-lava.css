@@ -251,9 +251,8 @@ body {
 }
 
 .button {
-  font-size: 22px;
   border: none;
-  border-radius: 16px;
+  border-radius: 0 0.5rem 0.5rem 0;
   text-align: center;
   padding: 10px 45px;
   letter-spacing: 1px;
@@ -372,6 +371,11 @@ header
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+}
+
+.form-control {
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  height: calc(1.5em + .75rem + 7px)
 }
 
 #lineContainer {
